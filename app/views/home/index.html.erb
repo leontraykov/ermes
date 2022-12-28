@@ -1,0 +1,12 @@
+<%= render 'hero' %>
+<div class="about-us-div">
+  <p class="about-us">
+    Ermes is born in Bari, Italy, thanks to the innovative ideas of a mechanical engineer passionate about the sport of spearfishing who, thanks to this perfect combination, managed to breed and develop innovative products. Our mission is to provide, to all who love and apply this sport, the best technological and innovative solutions applied to underwater fishing.
+  </p>
+</div>
+
+<article>
+  <% cache(cache_key_for_products) do %>
+    <%= render 'products/products', products: @products %>
+  <% end %>
+</article>

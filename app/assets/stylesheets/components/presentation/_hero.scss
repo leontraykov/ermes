@@ -1,0 +1,109 @@
+.parallax-section {
+  height: 600px;
+  background-image: url("ermes-bg.jpg");
+  // background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero {
+  height: 600px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #5E1C4C;
+  display: flex;
+  flex-direction: column;
+  justify-self: auto;
+}
+
+.hero__container {
+  @extend %section-spacings;
+  display: flex;
+  align-self: flex-end;
+}
+
+.hero-title {
+  padding-top: 1em;
+  font-family: "Brush Script MT";
+  display: flex;
+  justify-content: center;
+  color: #D1F4FB;
+  -webkit-text-stroke: .03em #3A52A1;
+
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  margin: 0;
+  font-size: $h1-font-size * 2.5;
+
+}
+
+.hero-subtitle {
+  padding-top: 1em;
+  font-family: "Brush Script MT";
+  display: flex;
+  justify-content: center;
+  color: #D1F4FB;
+  -webkit-text-stroke: .04em #3A52A1;
+
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  margin: 0;
+  font-size: $h1-font-size * 1.5;
+
+}
+
+.hidden {
+  /* Начальное состояние - скрытый текст не отображается */
+}
+
+.hidden.show {
+  /* Конечное состояние - скрытый текст отображается */
+  /* Анимация перехода от начального состояния к конечному, 
+  длительностью 300ms, с типом easing "ease-in" */
+}
+
+@keyframes show {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+.hero__message {
+  color: #2b0c23;
+  -webkit-text-stroke: .03em #dbabb3;
+  font-weight: bolder;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.heading {
+  // align-self: flex-end;
+}
+
+
+.about-us-div {
+  display: flex;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  align-content: center;
+  text-align: center;
+}
+
